@@ -92,7 +92,7 @@ is my RMSE percentage acceptable by some standard" VS What is the cost of being 
 
 
 
-**Penalized Regression** adds a constraint that penalizes the model for too many variables 
+**Penalized Regression** adds a constraint that penalizes the model for too many variables
 
 It doesn't remove predictor variables, it just reduces them, sometimes to 0
 
@@ -102,11 +102,11 @@ It doesn't remove predictor variables, it just reduces them, sometimes to 0
 
 
 
-Subset and stepwise regression have the potential of overfitting; reminds us of a form of **selection bias** known 
+Subset and stepwise regression have the potential of overfitting; reminds us of a form of **selection bias** known
 
 as **vast search effect**
 
-A solution to this is cross-validation or target shuffling	
+A solution to this is cross-validation or target shuffling
 
 
 
@@ -151,7 +151,7 @@ One-hot encoding is perfect for Neural networks, tree-based models (decision tre
 
 
 
-**Ridge (L2) Regression** 
+**Ridge (L2) Regression**
 
 What problem does it solve
 
@@ -165,11 +165,11 @@ Basically, **we find a line that doesn't fit the training data too well.** Start
 
 sum of squared residuals + (lambda + slope squared)
 
-The smaller the slope of a predictor, the less sensitive the outcome is to it. 
+The smaller the slope of a predictor, the less sensitive the outcome is to it.
 
 Ridge regression lines usually have a smaller slope than OLS line
 
-Increasing lambda generally further reduces the slope. 
+Increasing lambda generally further reduces the slope.
 
 We choose the best lambda using cross validation
 
@@ -181,7 +181,7 @@ Use Ridge regression when your training set is small
 
 **Lasso (L1) Regression**
 
-Just like ridge regression but uses |slope| instead of slope squared 
+Just like ridge regression but uses |slope| instead of slope squared
 
 Has the ability to take the slope to 0 and remove the predictor totally, unlike ridge
 
@@ -229,7 +229,31 @@ Try and make sense of things. Like, why would the coefficient of bedrooms be neg
 
 
 
+How much the variance of a coefficient is inflated due to multicollinearity
+
+High VIF - this feature is redundant given others; Can this variable be explained by ALL the others?
 
 
 
+What **Unstable** means as per coefficients
+
+* surprisingly large magnitudes
+* Wrong signs
+* Coefficients that contradict domain knowledge
+
+
+
+But there’s still \~40% unexplained (likely nonlinearities, missing features, noise)
+
+
+
+
+
+
+
+
+
+
+
+https://claude.ai/share/7a2ceddc-92c0-4e22-9bca-a2ac88b070b5
 
