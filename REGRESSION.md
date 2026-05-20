@@ -193,6 +193,12 @@ Lasso regression when we have a lot of useless variables
 
 
 
+STEPWISE vs PENALIZED: https://claude.ai/share/7a2ceddc-92c0-4e22-9bca-a2ac88b070b5  or https://claude.ai/chat/54335d24-7269-477d-b3d1-99c80726b926
+
+
+
+
+
 **Regularization signals**
 
 1. Overfitting
